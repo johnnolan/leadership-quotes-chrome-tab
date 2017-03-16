@@ -7,20 +7,11 @@ $(function() {
 	$quote = $('#quote');
 	$body = $('body');
 
-	function randomNumber(max) {
-		return Math.floor((Math.random() * max));
-	}
-
 	$.get("/data/quotes.json", function( data ) {
 		var jsonPackage = JSON.parse(data);
 		var randomNumber = Math.floor((Math.random() * jsonPackage.length));
 		var quote = jsonPackage[randomNumber].quote;
 		var author = jsonPackage[randomNumber].author;
-		$quote.html(quote + '<div class="author">' + author + '</div>');
+		$quote.html('"' + quote + '"<div class="author">- ' + author + '</div>');
 	});
 });
-
-var $quotes = $('.b-qt');
-for (i = 0; i < $quotes.length; i++) {
-	console.log('{ "quote": "' + $($quotes[i]).html() + '", "author": "Simon Sinek"},');
-}
