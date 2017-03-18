@@ -1,6 +1,6 @@
 {
   "name": "Inspirational Leadership and Coaching Quotes",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "manifest_version": 2,
   "description": "A new default tab for quotes from leaders and coaches.",
   "short_name": "Inspirational Leadership Quotes",
@@ -10,6 +10,9 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
+  "permissions": [
+    "topSites"
+  ],
   "default_locale": "en",
   "background": {
     "page": "bg/background.html",
