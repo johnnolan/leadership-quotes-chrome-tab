@@ -2,7 +2,7 @@
   "name": "Inspirational Leadership and Coaching Quotes",
   "version": "0.0.5",
   "manifest_version": 2,
-  "description": "A new default tab for quotes from leaders and coaches.",
+  "description": "A new default tab for quotes from leaders and coaches. Also has list of most popular websites visited.",
   "short_name": "Inspirational Leadership Quotes",
   "homepage_url": "https://www.nolanscafe.co.uk",
   "icons": {
